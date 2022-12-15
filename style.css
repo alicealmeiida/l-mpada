@@ -1,0 +1,66 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #container img {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    background-color: red;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .lightoff {
+    background-color: black;
+    transition: background-color 2s ease-out;
+  }
+  
+  .lighton {
+    background-color: rgb(250, 250, 81);
+    transition: background-color 2s ease-out;
+  }
